@@ -247,24 +247,3 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
-
-@media all and (max-width:1180px) {
-	.picture {
-		flex: 2
-	}
-
-	#about,
-	#contact .container {
-		align-items: center
-	}
-
-	.about-me__title {
-		margin-top: 0;
-		margin-bottom: 1em
-	}
-
-	#about-me h6,
-	#about-me p {
-		width: 100%
-	}
-}
