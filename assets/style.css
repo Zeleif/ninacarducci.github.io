@@ -148,7 +148,7 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral', sans-serif;
+	font-family: 'Spectral';
 	font-style: italic;
 	width: 70%;
 	margin: auto;
@@ -156,13 +156,13 @@ body {
 }
 
 .quote__text {
-	font-family: Spectral, sans-serif;
+	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300
 }
 
 .quote__author {
-	font-family: Spectral, sans-serif;
+	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px
 }
