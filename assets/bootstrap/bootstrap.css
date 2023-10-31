@@ -1727,9 +1727,9 @@ textarea {
 }
 
 .nav-pills .nav-link {
-  color: #fff;
-  background-color: #BEB45A;
-  border-radius: 0;
+  background: none;
+  border: 0;
+  border-radius: 0.25rem;
 }
 
 .nav-pills .nav-link.active,
