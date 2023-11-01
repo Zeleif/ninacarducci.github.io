@@ -13,8 +13,10 @@
 	<meta property="og:image" content="./assets/images/nina.webp">
 	<meta property="og:description"
 		content="Nina Carducci, photographe professionnel Bordeaux : séances personnalisées, retouches d'images, albums photo uniques.">
-	<meta name="twitter:title" content="Nina Carducci">
+	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="https://www.instagram.com/ninacarducci.photo/?hl=fr">
+	<meta name="twitter:title" content="Nina Carducci">
+	<meta name="twitter:creator" content="@NinaCarducci">
 	<meta name="twitter:description"
 		content="Nina Carducci, photographe professionnel Bordeaux : séances personnalisées, retouches d'images, albums photo uniques.">
 	<meta name="twiter:image" content="./assets/images/nina.webp">
@@ -68,7 +70,13 @@
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"><img src="assets/images/instagram.webp" alt="logo-instagram"></a></li>
+							target="_blank">
+							<picture>
+								<source srcset="assets/images/instagram.webp" type="image/webp">
+								<img src="assets/images/instagram.jpg" alt="logo-instagram" width="462" height="461">
+							</picture>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -96,7 +104,7 @@
 						<picture>
 							<source srcset="./assets/images/slider/men-at-concert.webp" type="image/webp">
 							<img src="./assets/images/slider/men-at-concert.jpg" class="d-block w-100"
-								alt="hommes exprimant leur joie">
+								alt="hommes exprimant leur joie" width="w-100" height="h-100">
 						</picture>
 					</div>
 					<div class="carousel-item">
@@ -122,8 +130,12 @@
 		</section>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="Portrait de Nina">
+				<picture>
+					<source srcset="./assets/images/nina.webp" type="image/webp">
+					<img src="./assets/images/nina.jpg" alt="Portrait de Nina">
+				</picture>
 			</div>
+
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
 				<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
@@ -239,7 +251,11 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.webp" alt="Caméra">
+					<picture>
+						<source srcset="./assets/images/camera.webp" type="image/webp">
+						<img src="./assets/images/camera.jpg" alt="Caméra">
+					</picture>
+
 				</div>
 			</footer>
 		</section>
