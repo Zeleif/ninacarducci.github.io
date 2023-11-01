@@ -96,10 +96,6 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-
 .title {
 	text-align: center;
 	padding-block: 2em;
@@ -112,8 +108,9 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5e5926;
 	border-radius: 0;
+	font-size: 18px;
 }
 
 .nav-pills .nav-link {
