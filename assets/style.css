@@ -14,14 +14,13 @@ body {
 	top: 0;
 	z-index: 1000;
 	display: flex;
-	justify-content: space-between;
-	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
 }
 
 .top-header .name {
 	font-size: 26px;
+	margin: 20px;
 }
 
 .nav ul {
@@ -31,10 +30,6 @@ body {
 	margin-bottom: 0;
 }
 
-.nav li {
-	padding-inline: 10px;
-}
-
 .nav a {
 	text-decoration: none;
 	color: #000
@@ -42,7 +37,6 @@ body {
 
 .social-link img {
 	width: 20px;
-	height: 20px;
 }
 
 #about {
@@ -70,12 +64,6 @@ body {
 	z-index: 0;
 }
 
-.picture img {
-	width: 100%;
-	height: 100%;
-
-}
-
 #about-me {
 	flex: 2
 }
@@ -90,6 +78,7 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
+	width: 60%;
 }
 
 #about-me p {
@@ -108,10 +97,9 @@ body {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-	color: #fff;
-	background-color: #5e5926;
+	color: #000;
+	background-color: #BEB45A;
 	border-radius: 0;
-	font-size: 18px;
 }
 
 .nav-pills .nav-link {
@@ -128,7 +116,6 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 
 .gallery-item {
@@ -137,6 +124,7 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	display: flex;
 }
 
 .mg-prev,
@@ -162,7 +150,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
 }
 
 .quote__author {
@@ -192,7 +180,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding: 2em 0;
-
 }
 
 .service {
@@ -232,7 +219,6 @@ body {
 
 .form-container {
 	flex: 2;
-
 }
 
 form {
@@ -265,7 +251,7 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-@media all and (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
 	.picture {
 		flex: 2;
 	}
@@ -280,16 +266,15 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6,
+	#about-me h3,
 	#about-me p {
 		width: 100%;
 	}
 }
 
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#about {
 		flex-direction: column;
-
 	}
 
 	.picture {
@@ -353,11 +338,15 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 650px) {
-	.top-header {
-		flex-direction: column;
-		padding-inline: 0;
-	}
+.top-header {
+	flex-direction: row;
+	padding-inline: 0;
+	justify-content: space-between;
+	padding-inline: 100px;
+	padding-block: 30px;
+}
+
+@media screen and (max-width: 650px) {
 
 	.top-header .nav,
 	.top-header .nav ul {
@@ -396,5 +385,12 @@ input[type="submit"] {
 
 	.picture {
 		width: 80%;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.nav li {
+		padding-inline: 10px;
+		font-size: 16px;
 	}
 }
