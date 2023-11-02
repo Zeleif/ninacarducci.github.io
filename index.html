@@ -9,9 +9,7 @@
 	<title>Nina Carducci, photographe en Nouvelle-Aquitaine</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" onload="this.onload=null;this.rel='stylesheet' ">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<meta property="og:title" content="Nina Carducci">
@@ -129,13 +127,11 @@
 			</div>
 		</section>
 		<section id="about">
-			<div class="picture left">
-				<picture>
-					<source srcset="./assets/images/nina.webp" type="image/webp">
-					<img src="./assets/images/nina.webp" alt="Portrait de Nina" width="450" height="470">
-				</picture>
-			</div>
-
+			<picture class="picture left">
+				<source srcset="./assets/images/nina-medium.webp" media="(max-width: 1024px)">
+				<source srcset="./assets/images/nina.webp">
+				<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci" width="450px" height="470px">
+			</picture>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
 				<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
