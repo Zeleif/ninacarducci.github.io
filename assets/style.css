@@ -389,6 +389,9 @@ input[type="submit"] {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+	.about-me__introduction {
+		font-size: medium;
+	}
 
 	form {
 		width: 100%;
