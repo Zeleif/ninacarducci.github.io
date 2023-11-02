@@ -4,9 +4,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nina Carducci, photographe en Nouvelle-Aquitaine</title>
 	<meta name="description"
 		content="Nina Carducci, photographe professionnel Bordeaux : séances personnalisées, retouches d'images, albums photo uniques.">
+	<title>Nina Carducci, photographe en Nouvelle-Aquitaine</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<meta property="og:title" content="Nina Carducci">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://Zeleif/ninacarducci.github.io">
@@ -20,10 +27,6 @@
 	<meta name="twitter:description"
 		content="Nina Carducci, photographe professionnel Bordeaux : séances personnalisées, retouches d'images, albums photo uniques.">
 	<meta name="twiter:image" content="./assets/images/nina.webp">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<script type="application/ld+json">
 		{
@@ -86,26 +89,33 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<picture>
-							<source srcset="./assets/images/slider/crossing-man.webp" type="image/webp">
-							<img src="./assets/images/slider/crossing-man.jpg" class="d-block w-100"
-								alt="homme qui marche sur un passage piéton" width="1999" height="925">
+							<source media="(max-width: 480px)"
+								srcset="./assets/images/slider/slider-mobile/crossing-man-small.webp">
+							<source media="(min-width: 481px)" srcset="./assets/images/slider/crossing-man.webp">
+							<img src="./assets/images/slider/crossing-man-default.webp"
+								alt="homme qui marche sur un passage piéton" class="d-block w-100">
 						</picture>
 					</div>
 					<div class="carousel-item">
 						<picture>
-							<source srcset="./assets/images/slider/men-at-concert.webp" type="image/webp">
-							<img src="./assets/images/slider/men-at-concert.jpg" class="d-block w-100"
-								alt="hommes exprimant leur joie" width="1920" height="925">
+							<source media="(max-width: 480px)"
+								srcset="./assets/images/slider/slider-mobile/men-at-concert-small.webp">
+							<source media="(min-width: 481px)" srcset="./assets/images/slider/men-at-concert.webp">
+							<img src="./assets/images/slider/men-at-concert-default.webp"
+								alt="hommes exprimant leur joie" class="d-block w-100">
 						</picture>
 					</div>
 					<div class="carousel-item">
 						<picture>
-							<source srcset="./assets/images/slider/wedding-kiss.webp" type="image/webp">
-							<img src="./assets/images/slider/wedding-kiss.jpg" class="d-block w-100"
-								alt="baiser de mariés" width="2001" height="925">
+							<source media="(max-width: 480px)"
+								srcset="./assets/images/slider/slider-mobile/wedding-kiss-small.webp">
+							<source media="(min-width: 481px)" srcset="./assets/images/slider/wedding-kiss.webp">
+							<img src="./assets/images/slider/wedding-kiss-default.webp" alt="un baiser de mariés"
+								class="d-block w-100">
 						</picture>
 					</div>
 				</div>
+
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 					data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
