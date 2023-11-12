@@ -264,7 +264,14 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
-
+.infos-entreprise {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 50px;
+	background-color: beige;
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
@@ -351,6 +358,7 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+
 }
 
 @media all and (max-width: 650px) {
